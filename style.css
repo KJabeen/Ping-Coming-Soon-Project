@@ -1,0 +1,223 @@
+
+:root{
+    
+/* Primary */
+
+--Blue: hsl(223, 87%, 63%);
+
+/* Secondary */
+
+--PaleBlue: hsl(223, 100%, 88%);
+--LightRed: hsl(354, 100%, 66%);
+
+/* Neutral */
+
+--Gray: hsl(0, 0%, 59%);
+--VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0rem 0;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    
+}
+.container{
+    
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 1.5rem;
+}
+
+.container1{
+    
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: 'Libre Franklin';
+}
+.container1 img{
+    width: 15%;
+    padding-bottom: 1rem;
+}
+.container1 h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: lighter;
+}
+.container1 span{
+    color: black;
+    font-weight: 700;
+}
+.container1 p{
+    color: hsl(209, 33%, 12%);
+}
+
+.container2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    gap: 1rem;
+}
+.field-container{
+    
+    
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    
+}
+.field-group{
+    width: 55%
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    width: 100% ;
+    justify-content: center;
+    align-content: center;
+    gap: 0.8rem;
+}
+
+.field-container input{
+    width: 100%;
+    padding: 0.5rem 1rem ;
+    border-radius: 5px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 25px;
+}
+.field-group input:focus{
+    border: 1px solid hsl(249, 10%, 26%,0.5);
+
+}
+.field-group input::placeholder{
+    color: hsl(249, 10%, 26%, 0.6);
+    font-size: 0.8rem;
+    font-family: 'Libre Franklin';
+    font-weight: 600;
+}
+
+.error-text{
+    display: none;
+}
+
+.field-group.error .error-text{
+    display: block;
+}
+.field-group.error input{
+    border: 1px solid hsl(354, 100%, 66%);
+}
+
+.error-text{
+    
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: hsl(354, 100%, 66%);
+    text-align: start;
+    padding: 0.5rem 0.9rem;
+    
+}
+.btn{
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    text-align: center;
+}
+.container2 .dashboard img{
+   
+    width: 45%;
+}
+.dashboard{
+    display: grid;
+    justify-items: center;
+}
+.attribution 
+{ 
+    font-size: 0.6rem; 
+    text-align: center; 
+    margin: auto;
+    position: relative;
+    bottom: -25px;
+    color: var(--VeryDarkGrayishBlue);
+    font-family:Poppins;
+    font-weight: 400;
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width:425px){
+
+    body{
+        width: 100vw;
+        /* height: 100vh; */
+    }
+    .container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container1 h1{
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 1.3rem;
+        text-align: center;
+    
+    } 
+    .container1 p{
+        font-size: 0.7rem;
+    }
+    
+    .container2{
+         width: 100%;
+    }
+
+    
+.field-group{
+    width: 100%
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+    justify-content: center;
+    align-content: center;
+    gap: 0.8rem;
+}
+.btn{
+    width: 100%;
+}
+.container2 .dashboard img{
+   
+    width: 100%;
+}
+
+}
